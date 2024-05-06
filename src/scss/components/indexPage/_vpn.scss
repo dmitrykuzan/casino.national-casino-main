@@ -1,0 +1,76 @@
+.vpn {
+
+  &__wrapper {
+    padding-bottom: 10rem;
+
+    @media (max-width: em(992)) {
+      padding-bottom: 8rem;
+    }
+  
+    @media (max-width: em(575)) {
+      padding-bottom: 5rem;
+    }
+  }
+
+  &__list {
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+
+      .vpn__image {
+        margin-right: initial;
+        margin-left: 4.5rem;
+
+        @media (max-width: em(992)) {
+          margin-left: initial;
+        }
+      }
+
+      @media (max-width: em(992)) {
+        flex-direction: column;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 8rem;
+
+      @media (max-width: em(992)) {
+        margin-bottom: 4rem;
+      }
+    }
+
+    @media (max-width: em(992)) {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    flex-shrink: 0;
+    margin-right: 4.5rem;
+    max-width: 47.5rem;
+
+    img {
+      border-radius: 3.3rem;
+    }
+
+    @media (max-width: em(992)) {
+      margin-right: initial;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__info {
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__text {
+  }
+}

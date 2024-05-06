@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 13rem;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 122rem;
+
+    @media (max-width: em(1200)) {
+      margin-right: initial;
+      margin-left: initial;
+      max-width: initial;
+    }
+  }
+
+  &__link {
+    margin-left: 2rem;
+    min-width: 20.5rem;
+
+    @media (max-width: em(992)) {
+      margin-right: 2rem;
+      margin-left: auto;
+      min-width: 17rem;
+    }
+
+    @media (max-width: em(575)) {
+      margin-right: initial;
+      margin-left: initial;
+    }
+  }
+
+  @media (max-width: em(1200)) {
+    min-height: 10rem;
+  }
+
+  @media (max-width: em(992)) {
+    min-height: 9rem;
+  }
+
+  .container {
+    border-right: initial;
+    border-left: initial;
+    background-color: initial;
+  }
+}
